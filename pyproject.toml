@@ -2,7 +2,7 @@
 name = "root-cause-diagnosis"
 description = "Backend and infrastructure incidents where the obvious answer is the symptom, not the cause. Scored so that naming the symptom is penalised."
 tags = ["debugging", "backend", "devops", "sre", "root-cause", "eval", "train"]
-version = "0.1.0"
+version = "0.2.0"
 requires-python = ">=3.10"
 dependencies = [
     "verifiers>=0.3.1",
@@ -16,5 +16,5 @@ build-backend = "hatchling.build"
 include = ["root_cause_diagnosis.py", "pyproject.toml"]
 
 [tool.verifiers.eval]
-num_examples = 5
+num_examples = 18
 rollouts_per_example = 3
